@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="mt-5 text-center">
+    <img src="{% static 'core/imgs/hira.jfif' %}" alt"Profilepic" class="img-thumbnail" width="250px" height="150px" >
+</div>
+<div class="text-danger mt-2 ">
+    <h1 class= "font-weight-bold st-font">Hey,</h1>
+  
+</div>
+
+<div class="text-white mx-5 text-justify">
+    <p style="text-indent:100px;">
+         I am a  <b class="text-danger"> Web Developer</b> my goal is to become associated with a company where I can utilize my skills and gain further experience while enhancing the company's
+productivity and reputation.my goal is to become associated with a company where I can utilize my skills and gain further experience while enhancing the company's
+productivity and reputation.
+
+    </p>
+</div>
+<div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-danger my-3 mx-5">
+        Contact me
+    </a>
+    <a href="{% url 'exp' %}" class="btn btn-outline-danger my-3  ">
+        Know More 
+    </a>
+</div>
+</div>
+{% endblock content %}
